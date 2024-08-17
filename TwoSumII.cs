@@ -3,14 +3,11 @@ public class Solution {
         int leftIndex = 0;
         int rightIndex = numbers.Length - 1;
 
-        while(numbers[leftIndex] + numbers[rightIndex] != target)
-        {
-            if(numbers[leftIndex] + numbers[rightIndex] < target)
-            {
+        while(numbers[leftIndex] + numbers[rightIndex] != target) {
+            if(numbers[leftIndex] + numbers[rightIndex] < target) {
                 leftIndex++;
             }
-            else
-            {
+            else {
                 rightIndex--;
             }
         }
