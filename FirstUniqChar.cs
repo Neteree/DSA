@@ -3,22 +3,17 @@ public class Solution {
 
         Dictionary<char, int> chFreqs = new();
 
-        foreach (char ch in s)
-        {
-            if(chFreqs.ContainsKey(ch))
-            {
+        foreach (char ch in s) {
+            if(chFreqs.ContainsKey(ch)) {
                 chFreqs[ch]++;
             }
-            else
-            {
+            else {
                chFreqs[ch] = 1; 
             }
         }
 
-        foreach (char ch in chFreqs.Keys)
-        {
-            if(chFreqs[ch] == 1)
-            {
+        foreach (char ch in chFreqs.Keys) {
+            if(chFreqs[ch] == 1) {
                 return s.IndexOf(ch);
             }
         }
